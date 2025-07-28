@@ -1,0 +1,5 @@
+## Docker Build
+docker build -t my-app-image .
+
+## Docker Run
+docker run my-app-image

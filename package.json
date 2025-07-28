@@ -6,10 +6,10 @@
     "start": "node index.js",
     "dev": "NODE_ENV=development ENV_PATH=deployment/development/.env nodemon index.js",
     "prod": "NODE_ENV=production ENV_PATH=deployment/production/.env node index.js",
-    "db:migrate": "npx sequelize-cli db:migrate",
-    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
-    "db:seed": "npx sequelize-cli db:seed:all",
-    "db:seed:undo": "npx sequelize-cli db:seed:undo:all"
+    "db:migrate": "NODE_ENV=development DATABASE_URL=\"postgresql://neondb_owner:npg_ysUSk7nNFZu5@ep-divine-bonus-a1r7u70o-pooler.ap-southeast-1.aws.neon.tech/express-trial?sslmode=require&channel_binding=require\" npx sequelize-cli db:migrate",
+    "db:migrate:undo": "NODE_ENV=development DATABASE_URL=\"postgresql://neondb_owner:npg_ysUSk7nNFZu5@ep-divine-bonus-a1r7u70o-pooler.ap-southeast-1.aws.neon.tech/express-trial?sslmode=require&channel_binding=require\" npx sequelize-cli db:migrate:undo",
+    "db:seed": "NODE_ENV=development DATABASE_URL=\"postgresql://neondb_owner:npg_ysUSk7nNFZu5@ep-divine-bonus-a1r7u70o-pooler.ap-southeast-1.aws.neon.tech/express-trial?sslmode=require&channel_binding=require\" npx sequelize-cli db:seed:all",
+    "db:seed:undo": "NODE_ENV=development DATABASE_URL=\"postgresql://neondb_owner:npg_ysUSk7nNFZu5@ep-divine-bonus-a1r7u70o-pooler.ap-southeast-1.aws.neon.tech/express-trial?sslmode=require&channel_binding=require\" npx sequelize-cli db:seed:undo:all"
   },
   "keywords": [],
   "author": "",
